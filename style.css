@@ -1,0 +1,462 @@
+@font-face {
+    font-family: "Titulo";
+    src:
+    local("Titulo"),
+    format(trueType),
+    url(font/AngillaTattoo_PERSONAL_USE_ONLY.ttf);
+}
+
+@font-face {
+    font-family: "corpo";
+    src:
+    local("corpo"),
+    format(trueType), 
+    url(font/PirataOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Titulo2";
+    src: 
+    local("Titulo2"),
+    format(trueType),
+    url(font/Hatolie.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1980px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    border-bottom: 4px solid rgb(128, 128, 128);
+    position: fixed; /* Fixa o header na tela */
+    top: 0; /* Alinha o header no topo da tela */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: "Titulo";
+    padding: 20px;
+    font-size: 3em;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icone {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header .menu img {
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;   
+}
+
+nav {
+    display: none; /* Inicialmente oculto */
+    padding: 5px;
+    background-color: rgb(128, 128, 128);
+    top: 100%; /* Coloca o menu abaixo do header */
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centraliza os itens horizontalmente */
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Para alinhar os itens horizontalmente */
+    margin: 0 20px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-family: "corpo";
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+nav.active {
+    display: block;
+}
+
+.menu {
+    align-items: center;
+}
+
+.caixa{
+    width: 40%;
+}
+
+.text {
+    width: 40%;
+}
+
+.containerFlex {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    margin-top: 150px;
+}
+
+section .caixa img {
+    margin: 5% 5%;
+    box-shadow: 1px 3px 8px 1px white;
+}
+
+section .containerFlex h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-family: "Titulo2";
+}
+
+section .containerFlex p {
+    padding: 20px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.carrosel {
+    margin: 40px;
+    width: 500px;
+    box-shadow: 0px 0px 6px 2px white;
+}
+
+.segundaParte {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+.topo {
+    margin-top: 20px;
+}
+
+.segundaParte h2 {
+    font-size: 4em;
+    font-family: "Titulo2";
+}
+
+.segundaParte p {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.icon {
+    height: 20px;
+}
+
+.formCampo {
+    margin-bottom: 16px;
+}
+
+.formCampo label {
+    display: block;
+    font-weight: bold;
+}
+
+.formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.formulario input,
+.formulario button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid rgb(134, 134, 134);
+}
+
+.formulario button {
+    padding: 10px;
+    margin: 0 auto; /* Centraliza horizontalmente o botão */
+    border-radius: 30px;
+    background-color: gray;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    font-family: "titulo2";
+}
+
+.endereco h2 {   
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.endereco img {
+    height: 30px;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+}
+
+.local p {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.local img{
+    margin-left: 30px;
+}
+
+.local2 a{
+    text-decoration: none;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+.local2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a span {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.terceiraParte {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 2px solid gray;
+}
+
+.formulario label {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-family: "Titulo2";
+    
+}
+
+
+.endereco h2{
+    font-family: "titulo2";
+    font-size: 4em;
+}
+
+.endereco p{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    border-bottom: 2px solid gray;
+
+}
+
+footer img {
+    height: 30px;
+}
+
+.rodaPe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.peque {
+    display: none;
+}
+
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+
+        .containerFlex{
+            font-size: 10px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .containerFlex img{
+            width: 300px;
+        }
+
+        .containerFlex p{
+            margin-bottom: 5%;
+        }
+        
+        .segundaParte{
+            font-size: 10px;
+        }
+
+        .carrosel{
+            width: 300px;
+        }
+
+        .terceiraParte{
+            font-size: 10px;
+        }
+
+        footer {
+            font-size: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 640px) {
+        body {
+            max-width: 430px;
+            width: 100%
+            overflow-x: hidden;
+        }
+    
+        /* Exemplo adicional: */
+        .containerFlex,
+        .container,
+        .caixa,
+        .carrosel {
+            overflow-x: hidden;
+        }
+    
+        header img {
+            height: 20px;
+        }
+    
+        header h1 {
+            font-size: 1.5em;
+        }
+    
+        .container {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+        .containerFlex {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .text {
+            font-size: 10px;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .caixa img {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    
+        section .containerFlex h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            font-family: "Titulo2";
+        }
+    
+        .text p,
+        .text h2 {
+            height: 100%;
+        }
+    
+        .text h2 {
+            font-size: 1.5em;
+        }
+    
+        .text p {
+            font-size: 1em;
+        }
+    
+        .segundaParte {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .carrosel {
+            width: 300px;
+            margin: 40px;
+        }
+    
+        .segundaParte h2 {
+            font-size: 2em;
+        }
+    
+        .segundaParte p {
+            font-size: 1em;
+        }
+    
+        .terceiraParte {
+            flex-direction: column;
+        }
+    
+        .terceiraParte h2 {
+            font-size: 2em;
+        }
+    
+        .terceiraParte p {
+            font-size: 1em;
+        }
+    
+        footer .rodaPe p {
+            font-size: 0.5em;
+        }
+    }
+    
