@@ -136,7 +136,7 @@ nav.active {
 
 section .caixa img {
     margin: 5% 5%;
-    box-shadow: 1px 3px 8px 1px white;
+    box-shadow: 0px 0px 8px 1px white;
 }
 
 section .containerFlex h2 {
@@ -373,6 +373,10 @@ footer img {
         .carrosel {
             overflow-x: hidden;
         }
+
+        ul li {
+            font-size: 1em;
+        }
     
         header img {
             height: 20px;
@@ -400,7 +404,8 @@ footer img {
         }
     
         .caixa img {
-            width: 100%;
+            margin: auto;
+            width: 90%;
             margin-bottom: 50px;
         }
     
@@ -454,8 +459,31 @@ footer img {
         .terceiraParte p {
             font-size: 1em;
         }
-    
+         
+        .fim {
+            margin-bottom: 20px;
+        }
+
+        .endereco h2,
+        .formCampo label,
+        .formCampo button{
+            font-size: 1em;
+        }
+
         footer .rodaPe p {
+            font-size: 0.4em;
+        }
+
+        footer .rodaPe img{
+            height: 20px;
+        }
+
+        .dados img{
+            height: 20px;
+        }
+
+        .dados p,
+        .dados a{
             font-size: 0.5em;
         }
     }
