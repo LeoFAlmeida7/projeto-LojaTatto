@@ -486,5 +486,13 @@ footer img {
         .dados a{
             font-size: 0.5em;
         }
+
+        .container img{
+            height: 20px;
+        }
+
+        .menu img{
+            height: 20px;
+        }
     }
     
