@@ -496,3 +496,15 @@ footer img {
         }
     }
     
+    @media screen and (min-width: 1025px) and (max-width: 1650px){
+
+        .containerFlex img{
+            height: 300px;
+        }
+
+        .containerFlex{
+            align-items: center;
+        justify-content: space-between;
+        }
+    }
+    
